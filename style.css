@@ -410,6 +410,11 @@ section .button button:hover {
 .projects .boxes .box:hover p {
   color: #fff;
 }
+@media (max-width: 768px) {
+  .projects .boxes .box {
+    width: 100%; /* Full width on small screens */
+  }
+}
 
 /* Contact Me CSS */
 .contact {
