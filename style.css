@@ -294,6 +294,89 @@ section .button button:hover {
   color: #4070f4;
 }
 
+/* Education Section CSS */
+.education {
+  background: #fff;
+}
+
+.education .education-details {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.education .edu-item {
+  border-radius: 12px;
+  padding: 25px 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  background-color: #f9f9f9;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: fadeUp 0.8s forwards;
+}
+
+.education .edu-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.education .edu-item:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.education .edu-item:hover {
+  background-color: #4070f4;
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+.education .edu-item:hover h3,
+.education .edu-item:hover span,
+.education .edu-item:hover p {
+  color: #fff;
+}
+
+.education .edu-item h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #0E2431;
+}
+
+.education .edu-item span {
+  display: block;
+  font-size: 16px;
+  color: #555;
+  margin-top: 6px;
+}
+
+.education .edu-item p {
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Animation Keyframes */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive for Education Section */
+@media (max-width: 768px) {
+  .education .edu-item {
+    padding: 20px;
+  }
+
+  .education .edu-item h3 {
+    font-size: 20px;
+  }
+
+  .education .edu-item span,
+  .education .edu-item p {
+    font-size: 15px;
+  }
+}
 /* My Skills CSS */
 .skills {
   background: #F0F8FF;
